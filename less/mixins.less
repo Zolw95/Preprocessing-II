@@ -1,1 +1,27 @@
 // Mixins in here
+
+/* div.btn {
+    border: 1px solid #008081;
+    border-radius: 15px;
+    text-align: center;
+    padding: 4%;
+    width: 85%;
+    background-color: #008081;
+    color: white;
+    font-size: 2rem;
+}
+*/
+
+.btn-design(@bg, @c, @fs) {
+    border: 1px solid #008081;
+    border-radius: 15px;
+    text-align: center;
+    padding: 4%;
+    width: 85%;
+    background-color: @bg;
+    color: @c;
+    font-size: @fs;
+    @media @mobile {
+        width: 100%;
+    }
+}
