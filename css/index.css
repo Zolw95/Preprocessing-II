@@ -345,3 +345,41 @@ div.header img {
 div.header p {
   margin-bottom: 2%;
 }
+/* Style inputs with type="text", select elements and textareas */
+div.table {
+  margin: 5% 20%;
+  font-size: 1.6rem;
+}
+@media ( max-width: 500px) {
+  div.table {
+    width: 5% 10%;
+  }
+}
+div.table input[type=text],
+div.table select,
+div.table textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+div.table input[type=submit] {
+  background-color: #008081;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.table input[type=submit]:hover {
+  background-color: #008081;
+}
+div.table .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
